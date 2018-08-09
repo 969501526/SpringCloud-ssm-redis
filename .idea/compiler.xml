@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-item" />
+        <module name="spring-item-api" />
+        <module name="spring-mapper" />
+        <module name="spring-pojo" />
+        <module name="spring-tool" />
+        <module name="spring-user" />
+        <module name="spring-user-api" />
+        <module name="spring-zull" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-api" target="1.6" />
+      <module name="springzull" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.clj.spring</groupId>
+    <artifactId>spring-cloud</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>spring-eureka</module>
+        <module>spring-user</module>
+        <module>spring-mapper</module>
+        <module>spring-pojo</module>
+        <module>spring-tool</module>
+        <module>spring-user-api</module>
+        <module>spring-zull</module>
+        <module>spring-item</module>
+        <module>spring-item-api</module>
+    </modules>
+
+
+</project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clj.spring.mapper.TbItemMapper">
+  <resultMap id="BaseResultMap" type="com.clj.spring.model.TbItem">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="sell_point" jdbcType="VARCHAR" property="sellPoint" />
+    <result column="price" jdbcType="BIGINT" property="price" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="barcode" jdbcType="VARCHAR" property="barcode" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="cid" jdbcType="BIGINT" property="cid" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="weight" jdbcType="INTEGER" property="weight" />
+    <result column="created" jdbcType="TIMESTAMP" property="created" />
+    <result column="updated" jdbcType="TIMESTAMP" property="updated" />
+    <result column="colour" jdbcType="VARCHAR" property="colour" />
+    <result column="size" jdbcType="VARCHAR" property="size" />
+  </resultMap>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select * from tb_item
+  </select>
+  <select id="selectById" resultMap="BaseResultMap" parameterType="Long">
+    select * from tb_item where id = #{id}
+  </select>
+  <update id="update" parameterType="com.clj.spring.model.TbItem">
+    update tb_item set num=#{num} where id=#{id}
+  </update>
+  <delete id="deleteAll">
+    delete  from tb_item
+  </delete>
+</mapper>

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-item
+server:
+  port: 2002
+eureka:
+  instance:
+    status-page-url: http://localhost:${server.port}/swagger-ui.html
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka
+
